@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button, input {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Press Start 2P', sans-serif;
+  background: #1a001a;
+  color: white;
+  height: 100vh;
+}
+
+body {
+  border: 10px solid #7afffff5;
+  padding: 20px;
+  box-shadow: inset 0 0 20px rgba(0, 255, 255, 1), 
+              inset 0 0 40px rgba(0, 255, 255, 0.7), 
+              inset 0 0 60px rgba(0, 255, 255, 0.5); 
+
+}
+
+
+
+
+.games {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #ffffff;
+  text-shadow: 
+    0 0 5px rgba(0, 255, 255, 0.5),
+    0 0 10px rgba(0, 255, 255, 0.5),
+    0 0 20px rgba(0, 255, 255, 0.3),
+    0 0 40px rgba(0, 255, 255, 0.2);
+  transition: text-shadow 0.3s ease;
+}
+
+h1:hover {
+  text-shadow: 
+    0 0 10px rgba(0, 255, 255, 1),
+    0 0 20px rgba(0, 255, 255, 0.7),
+    0 0 40px rgba(0, 255, 255, 0.5),
+    0 0 80px rgba(0, 255, 255, 0.3);
+}
+
+.games img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid rgba(0, 255, 255, 0.7);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.7), 
+              0 0 30px rgba(0, 255, 255, 0.5), 
+              0 0 45px rgba(0, 255, 255, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.games img:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 255, 1), 
+              0 0 40px rgba(0, 255, 255, 0.8), 
+              0 0 60px rgba(0, 255, 255, 0.6);
+}
+
+.title{
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 120px;
+  font-size: 40px;
+}
+
+@media (max-width: 830px) {
+  body{
+  height: 150%;
+  }
+  .title{
+    padding-bottom: 60px;
+  }
+  .games {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .games h1 {
+    font-size: 18px;
+  }
+
+  .games img {
+    width: 150px;
+    height: 150px;
+  }
+}
